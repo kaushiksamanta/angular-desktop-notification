@@ -5,7 +5,7 @@ And it only adds ~40 lines to your project.
 
 ## Screenshot
 -----
-![notification-logger](screenshot.png)
+![notification-logger](screenshot.JPG)
 
 ## Installing
 -----
@@ -17,7 +17,7 @@ And it only adds ~40 lines to your project.
 
 In your html/template add
 ```html
-<script src="bower_components/src/angular-desktop-notification.module.js"></script>
+  <script src="bower_components/src/angular-desktop-notification.module.js"></script>
 ```
 In your application, declare dependency injection like so..
 ```javascript

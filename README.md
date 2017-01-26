@@ -19,10 +19,12 @@ In your html/template add
 ```html
   <script src="bower_components/src/angular-desktop-notification.module.js"></script>
 ```
+
 In your application, declare dependency injection like so..
 ```javascript
   angular.module('notificationTest', ['angular-desktop-notification']);
 ```
+
 You can call the module by
 ```javascript
 angular.module('notificationTest')
@@ -33,6 +35,7 @@ angular.module('notificationTest')
         }
     });
 ```
+
 ## Methods
 -----
 * `Notification.initialize('src/dummy.png')` - Initialises the notification with icon.

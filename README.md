@@ -37,6 +37,7 @@ angular.module('notificationTest')
 -----
 * `Notification.initialize('src/dummy.png')` - Initialises the notification with icon.
 * `Notification.notify('body','Title')` - Pops the notification with title and body as argument.
+
 ## Browser Support
 -----
 Works best on latest versions of Google Chrome, Firefox and Safari.

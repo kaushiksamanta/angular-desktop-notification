@@ -1,0 +1,29 @@
+<html ng-app="notificationTest">
+
+  <head>
+    <title>Notification demo</title>
+    <script data-require="angular.js@1.4.5" data-semver="1.4.5" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+  </head>
+
+  <body ng-controller="notificationController">
+    <div class="container">
+      <h1>Angular Desktop Notification Demo</h1>
+      <textarea rows="10" cols="50" ng-model="text"></textarea>
+      <button ng-click="pop()">Notify</button>
+    </div>
+    <script src="src/angular-desktop-notification.module.js"></script>
+    <script type="text/javascript">
+            angular.module('notificationTest', ['angular-desktop-notification']);
+
+            angular.module('notificationTest')
+
+            .controller('notificationController', function($scope, Notification) {
+                Notification.initialize('src/dummy.png');
+                $scope.pop = function() {
+                  Notification.notify($scope.text,'Notification');
+                }
+            });
+        </script>
+  </body>
+
+</html>

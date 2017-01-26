@@ -15,17 +15,20 @@ And it only adds ~40 lines to your project.
  - include `angular-desktop-notification.js` from src folder.
  - Inject angular-desktop-notification into your angular module and inject Notification factory into your controller.
 
-In your html/template add
+## In your html/template add
+-----
 ```html
   <script src="bower_components/src/angular-desktop-notification.module.js"></script>
 ```
 
-In your application, declare dependency injection like so..
+## In your application, declare dependency injection like so..
+-----
 ```javascript
   angular.module('notificationTest', ['angular-desktop-notification']);
 ```
 
-You can call the module by
+## You can call the module by
+-----
 ```javascript
 angular.module('notificationTest')
     .controller('notificationController', function($scope, Notification) {
@@ -38,8 +41,8 @@ angular.module('notificationTest')
 
 ## Methods
 -----
-* `Notification.initialize('src/dummy.png')` - Initialises the notification with icon.
-* `Notification.notify('body','Title')` - Pops the notification with title and body as argument.
+ - `Notification.initialize('src/dummy.png')` - Initialises the notification with icon.
+ - `Notification.notify('body','Title')` - Pops the notification with title and body as argument.
 
 ## Browser Support
 -----

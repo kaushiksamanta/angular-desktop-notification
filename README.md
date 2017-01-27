@@ -12,7 +12,7 @@ And it only adds ~40 lines to your project.
  - Use `bower` or `git clone` to download the module.
    - `bower install angular-desktop-notification`
    - `git clone https://github.com/kaushiksamanta/angular-desktop-notification.git`
- - include `angular-desktop-notification.js` from src folder.
+ - include `angular-desktop-notification.module.js` from src folder.
  - Inject angular-desktop-notification into your angular module and inject Notification factory into your controller.
 
 ## In your html/template add
